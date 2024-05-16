@@ -84,19 +84,20 @@ class MainColors extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: columnSpacing),
       child: Wrap(
-        spacing: spacing,
-        runSpacing: runSpacing,
+        spacing: 0,
+        runSpacing: 0,
         children: <Widget>[
-          for (final ColorSwatch<Object> colorSwatch in activeColorSwatchList)
+          for (final ColorSwatch<Object> colorSwatch
+              in ColorTools.primaryAndAccentColors)
             ColorIndicator(
               isSelected: (selectedColor == colorSwatch[500] &&
                       colorSwatch is MaterialColor) ||
                   (selectedColor == colorSwatch[200] &&
                       colorSwatch is MaterialAccentColor),
               color: colorSwatch,
-              width: width,
-              height: height,
-              borderRadius: effectiveBorderRadius,
+              width: 45,
+              height: 49,
+              borderRadius: 0,
               hasBorder: hasBorder,
               borderColor: borderColor,
               elevation: elevation,

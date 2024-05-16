@@ -513,7 +513,9 @@ class ColorTools {
     Colors.deepOrangeAccent,
     Colors.brown,
     Colors.blueGrey,
+    whiteShade,
     Colors.grey,
+    blackShade,
   ];
 
   /// A color swatch for almost black colors, ending in black.
